@@ -10,3 +10,20 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+Robson = "Robson st"
+
+store = Store.create(
+  annual_revenue: "hello",
+  womens_apparel: true
+)
+
+puts store.valid?
+puts store.errors.full_messages
+
+employee = Employee.create(
+  first_name: "John"
+)
+
+puts employee.valid?
+puts employee.errors.full_messages
